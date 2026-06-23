@@ -1,21 +1,17 @@
-# ***Código para realizar el magic 8 ball***
+﻿import random  #Importamos el modulo de random.
 
-```python 
-
-import random  #Importamos el modulo de random.
-
-suerte = random.randint(1, 9)   #variable que almacena el número random.
+suerte = random.randint(1, 9)   #variable que almacena el nÃºmero random.
 
 Question = str(input("Realiza una pregunta a la suerte: "))
-#Apartado de Lógica de elección.
+#Apartado de LÃ³gica de elecciÃ³n.
 
-#Versión con listas:
+#VersiÃ³n con listas:
 list = ["Yes - definitely.", "It is decidedly so.", "Without a doubt.", "Reply hazy, try again.", "Ask again later.",
 "Better not tell you now.", "My sources say no.", "Outlook not so good.", "Very doubtful."]
 print(list[suerte - 1])
 
 
-#versión con match x:
+#versiÃ³n con match x:
 #match suerte:
     #case 1:
      #   print("Yes - definitely.")
@@ -35,5 +31,3 @@ print(list[suerte - 1])
     #    print("Outlook not so good.")
     #case 9:
     #    print("Very doubtful.")
-
-```
